@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(190, 196, 201);
+    font-family: Arial, sans-sarif;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+#headingOne{
+    color: rgb(124, 110, 34);
+}
+.headOne{
+    color: red;
+}
+
+h1, h2{
+    text-decoration: underline;
+    color: green;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+/* Class Selector */
+.btn{
+    background-color: #083e73;
+    color: aliceblue;
+
+}
