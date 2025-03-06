@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MTM6130 Midterm</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header id="home">
+            <h1>Oscar and Rosie's Blog</h1>
+        </header>
+        <div>
+        <main>
+            <div>
+            <a href="#home">Home</a>
+            <a href="#story">Story</a>
+            <a href="#contact">Contact</a>
+            </div>
+
+            <h2 id="story">Life of Oscar and Rosie</h2>
+            <img src="./images/sleeping.jpg" alt="Oscar and Rosie sleeping">
+            <p>Oscar and Rosie are the cutest most softest cats that have ever cated. They live everyday sleeping eating, playing, being
+                amazing as all cats should. From their pointy ears to their long whiskers, their big round eyes, fluffy tummy and
+                squishy toe beans, each feature excudes elegance. Has there ever been a more perfect creature? Fusce convallis, mauris imperdiet gravida bibendum, nisl lectus
+                interdum purus, sit amet sollicitudin velit magna eu quam. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                quaerat voluptatem. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien
+                risus a quam. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent
+                justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. <br> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Atque at dolorum id odit dolorem laborum debitis ea incidunt repudiandae asperiores sed eaque,
+                explicabo amet impedit fugiat excepturi tenetur dolor quas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis non, obcaecati cum ducimus repellat reprehenderit qui reiciendis debitis veritatis quaerat mollitia esse hic
+                ea fuga eos. Architecto voluptatibus facere mollitia?
+            </p>
+
+            <h2>Facts About Oscar and Rosie</h2>
+            <ul>
+                <li>Will sit on my stomach in the morning asking for food.</li>
+                <li>They like eating both wet and dry treats.</li>
+                <li>Will give paw shakes for food.</li>
+                <li>They make for good lap warmers in the winter.</li>
+            </ul>
+
+            <h2 id="contact">Contact to learn more</h2>
+            <form name="form">
+                <label for="userName">Your Name:</label>
+                <br>
+                <input id="userName" type="text">
+                <br>
+                <label for="userEmail">Your Email:</label>
+                <br>
+                <input id="userEmail" required type="email">
+                <br>
+                <label for="userMsg">Your Message:</label>
+                <br>
+                <textarea id="userMsg" cols="40" rows="5"></textarea>
+
+                <p>Would you like to see Oscar and Rosie?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="pref" value="yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="pref" value="no">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="pref" value="maybe">
+                <br>
+                <br>
+                <button>Send</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; Oscar and Rosie 2025.</p>
+        </footer>
+    </div>
+        
+    </body>
 </html>
