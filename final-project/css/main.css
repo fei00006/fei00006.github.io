@@ -185,7 +185,7 @@ h4{
 #services img{
 	width: 100%;
 }
-#services div{
+.block{
 	background-color: #ffe6ac;
 	padding-top: 20px;
 	padding-bottom: 10px;
@@ -282,5 +282,168 @@ footer a{
 }
 /*Styles for large screens*/
 @media  screen and (min-width: 760px) {
-    
+    .topnav{
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: repeat(autofill);
+		align-items: center;
+	}
+	.top{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 60%;
+		white-space: nowrap;
+	}
+
+	.img{
+		background-color: transparent;
+		width: auto;
+		margin-right: 10px;
+		padding-top: 0px;
+
+	}
+	.img img{
+		height: 48px;
+	}
+	header form{
+		display: grid;
+  		grid-auto-flow: column;
+		align-items: end;
+	}
+	header button{
+		height: 30px;
+	}
+	header input{
+		height: 25px;
+	}
+
+	/*adjusting the welcome portion to have margins*/
+	.welcome{
+		margin-left: 40px;
+		margin-right: 40px;
+		width: auto;
+		max-width: 1120px;
+	}
+	/*use flexbox to format about half image and half text*/
+	#about{
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	#about img{
+		width: 50%;
+		margin-right: 20px;
+	}
+
+	/*make a grid to format services*/
+	#services{
+		margin-left: 40px;
+		margin-right: 40px;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr); /* 6 columns of equal width */
+  		grid-template-rows: repeat(4, auto); /*  rows of equal height */
+		grid-template-areas: 
+		"a a a b b b"
+		"a a a b b b"
+		"c c d d e e"
+		"c c d d e e"
+		;
+		grid-gap: 10px;
+	}
+	.div1{
+		grid-area: a;
+	}
+	.div2{
+		grid-area: b;
+	}
+	.div3{
+		grid-area: c;
+	}
+	.div4{
+		grid-area: d;
+	}
+	.div5{
+		grid-area: e;
+	}
+
+	.vision{
+		padding-left: 40px;
+		padding-right: 40px;
+		width: auto;
+		max-width: 1120px;
+	}
+	#team{
+		display: grid;
+		width: 100vw;
+		grid-template-columns: repeat(1, 1fr); 
+  		grid-template-rows: repeat(2, auto); 
+		grid-template-areas: 
+		"a b"
+		"c d";
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.bob{
+		justify-content: center;
+		grid-area: c;
+		display: flex;
+		flex-direction: row-reverse;
+		width: 90%
+
+	}
+	.john{
+		justify-content: center;
+		width: 90%;
+		grid-area: a;
+		display: flex;
+
+	}
+	.bob img{
+		flex: 50%;
+    	max-width: 50%;
+	}
+	.john img{
+		flex: 50%;
+    	max-width: 50%;
+	}
+	#team .team{
+		padding: 10px;
+		margin-bottom: 0px;
+	}
+	
+	h2{
+		margin-left: 40px;
+	}
+	#about h2{
+		margin-left: 0px;
+
+	}
+
+	#contact{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 40px;
+		margin-right: 40px;
+		justify-content: space-between;
+	}
+	.contact{
+		flex-basis: 48%;
+		order: 1;
+	}
+	.location{
+		flex-basis: 48%;
+		order: 2;
+	}
+	.hours{
+		flex-basis: 100%;
+		order: 3;
+	}
+
+	footer{
+		padding-left: 40px;
+
+	}
 }
